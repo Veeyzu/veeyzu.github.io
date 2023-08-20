@@ -466,7 +466,7 @@ function animate() {
     }
 
 
-    camera.position.z = (isMobile || boola? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
+    camera.position.z = (isMobile && boola? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
     camera.rotation.z = -pointer.x/50  - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     camera.rotation.x = 300 + Math.sin(d.getTime()* 0.001) * .01  + pointer.y/50   - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     renderer.render(scene, camera);
