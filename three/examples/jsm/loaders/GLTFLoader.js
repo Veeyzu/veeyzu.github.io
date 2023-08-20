@@ -1,5 +1,7 @@
 import {
 	AnimationClip,
+	
+	
 	Bone,
 	Box3,
 	BufferAttribute,
@@ -61,7 +63,7 @@ import {
 	Vector3,
 	VectorKeyframeTrack,
 	SRGBColorSpace
-} from '/three/build/three.module.js';
+} from 'three';
 import { toTrianglesDrawMode } from '../utils/BufferGeometryUtils.js';
 
 class GLTFLoader extends Loader {
