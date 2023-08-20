@@ -1,5 +1,3 @@
-
-
 import * as THREE from '/three/build/three.module.js'
 import { LoadGLTFByPath } from '/ModelHelper.js'
 
