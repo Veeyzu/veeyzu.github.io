@@ -1,5 +1,4 @@
-import * as THREE from '/node_modules/three/build/three.module.js'
-import { LoadGLTFByPath } from '/ModelHelper.js'
+
 
 
 let x = 0;
