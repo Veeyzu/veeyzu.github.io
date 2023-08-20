@@ -98,7 +98,7 @@ if (window.innerWidth < window.innerHeight) {
           }
     
           ChosenId = intersects[0].object.parent.id; 
-          //console.log(intersects[0].object);
+          //console.log(intersects[0].o asd bject);
         }
         
       } 
