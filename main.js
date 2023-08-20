@@ -72,7 +72,7 @@ let isMobile = regexp.test(details);
       isSwiping = false;
 
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.pageY / window.innerHeight) * 2 - 100;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 - 30;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -105,7 +105,7 @@ let isMobile = regexp.test(details);
       console.log("owo");
       if (firstTouch) {
         pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-        pointer.y = -(event.pageY / window.innerHeight) * 2 - 100;
+        pointer.y = -(event.pageY / window.innerHeight) * 2 - 30;
         
         firstTouch = false;
       } else {
