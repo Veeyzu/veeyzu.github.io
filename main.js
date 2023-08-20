@@ -67,7 +67,7 @@ let boola = false;
 if (window.innerWidth < window.innerHeight) {
  boola = true;
 }
-//pointer event works better than touch event
+//pointer event work s better than touch event
 
   if (isMobile && boola) {
     document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
