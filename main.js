@@ -63,10 +63,13 @@ let firstTime = true;
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobile = regexp.test(details);
-
+let boola = false;
+if (window.innerWidth < window.innerHeight) {
+ boola = true;
+}
 //pointer event works better than touch event
 
-  if (isMobile) {
+  if (isMobile && boola) {
     document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
       firstTouch = true; 
       isSwiping = false;
@@ -446,10 +449,7 @@ function animate() {
     arrowRotate = Math.cos(d.getTime()* 0.002) * 5;
     
    // document.getElementById("Arrow").style.transform = "rotate("+arrowRotate+"deg) translate(-30vw, -25px)";
-    let boola = false;
-   if (window.innerWidth < window.innerHeight) {
-    boola = true;
-   }
+   
 
 
     if (Rotated == true) {
