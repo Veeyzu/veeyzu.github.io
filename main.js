@@ -72,7 +72,7 @@ let isMobile = regexp.test(details);
       isSwiping = false;
 
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -102,10 +102,10 @@ let isMobile = regexp.test(details);
 
     });
     document.getElementById("CellContainer").addEventListener('pointermove', (event) => {
-      console.log("owo");
+      console.log("owo2");
       if (firstTouch) {
         pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-        pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
+        pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
         
 
         firstTouch = false;
