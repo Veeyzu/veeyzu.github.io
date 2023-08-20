@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 const scenePath = '/Assets/BioWorkspace.gltf'
-import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 
 
 
