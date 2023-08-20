@@ -72,7 +72,7 @@ let isMobile = regexp.test(details);
       isSwiping = false;
 
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.pageY / window.innerHeight) * 2 + .35;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -105,7 +105,7 @@ let isMobile = regexp.test(details);
       console.log("owo2");
       if (firstTouch) {
         pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-        pointer.y = -(event.pageY / window.innerHeight) * 2 + .35;
+        pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
         
 
         firstTouch = false;
@@ -459,14 +459,8 @@ function animate() {
     camera.rotation.y = Math.cos(d.getTime()* 0.002) * .003   //+ (modelRotate/360 * 3.14) //+ Math.sin(modelRotate/360 * 3.14 )
     camera.position.y = -membrane.position.y -17 + -Math.abs(rotate)  + Math.cos(d.getTime()* 0.0005) + (Math.cos(modelRotate/360 * 3.14 ) * 30) + lerp(0,12, Math.sin(modelRotate/108 * 3.14 * 0.3))  
     //console.log(370%360);
-
-    let boola = false
-    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      boola = true;
-    }
-
-
-    camera.position.z = (isMobile && boola? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
+    
+    camera.position.z = (isMobile? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
     camera.rotation.z = -pointer.x/50  - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     camera.rotation.x = 300 + Math.sin(d.getTime()* 0.001) * .01  + pointer.y/50   - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     renderer.render(scene, camera);
