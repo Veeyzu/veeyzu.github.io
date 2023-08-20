@@ -126,7 +126,9 @@ let isMobile = regexp.test(details);
       }
       firstTouch = true;
     });
+    console.log("owowoowowowasdSDADAD");
   } else {
+    console.log("owowoowowow");
 //desktop behavior
     document.addEventListener('pointerdown', (event) => {
       isSwiping = false;
