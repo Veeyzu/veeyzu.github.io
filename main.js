@@ -255,7 +255,12 @@ let cameraList = [];
 let camera;
 
 document.getElementById("FunctionLabel").innerText = "< The Function >"
-document.getElementById("Title").innerText = "< The Plant Cell >"
+if (isMobile) {
+  document.getElementById("Title").innerText = "< The Plant Cell >"
+}else{
+  document.getElementById("Title").innerText = "< The Plant Cell3242342 >"
+}
+
 document.getElementById("MaketMaker").innerText = `
   Maket Maker:
   - People
