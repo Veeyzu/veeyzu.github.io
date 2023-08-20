@@ -107,6 +107,7 @@ let isMobile = regexp.test(details);
         pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
         pointer.y = -(event.pageY / window.innerHeight) * 2 - .05;
         
+        
         firstTouch = false;
       } else {
         const diffX = Math.abs(event.pageX - pointer.X);
