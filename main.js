@@ -446,7 +446,12 @@ function animate() {
     arrowRotate = Math.cos(d.getTime()* 0.002) * 5;
     
    // document.getElementById("Arrow").style.transform = "rotate("+arrowRotate+"deg) translate(-30vw, -25px)";
-    
+    let boola = false;
+   if (window.innerWidth < window.innerHeight) {
+    boola = true;
+   }
+
+
     if (Rotated == true) {
       modelRotate = lerp(modelRotate, 108,.05);
       
@@ -460,7 +465,7 @@ function animate() {
     camera.position.y = -membrane.position.y -17 + -Math.abs(rotate)  + Math.cos(d.getTime()* 0.0005) + (Math.cos(modelRotate/360 * 3.14 ) * 30) + lerp(0,12, Math.sin(modelRotate/108 * 3.14 * 0.3))  
     //console.log(370%360);
     
-    camera.position.z = (isMobile? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
+    camera.position.z = (isMobile && boola? -3 : 0) + Math.abs(rotate) * modelRotate/108 - (Math.abs(Math.sin(modelRotate/360 * 3.14 * 2 )) * 15) + lerp(0,-30, Math.sin((modelRotate/108) * 3.14 * 0.3) )  
     camera.rotation.z = -pointer.x/50  - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     camera.rotation.x = 300 + Math.sin(d.getTime()* 0.001) * .01  + pointer.y/50   - (Math.abs(Math.sin(modelRotate/360 * 3.14 )))
     renderer.render(scene, camera);
