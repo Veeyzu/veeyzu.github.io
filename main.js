@@ -90,7 +90,7 @@ let isMobile = regexp.test(details);
     
             document.getElementById("Description").innerText = lib[intersects[0].object.parent.name]
     
-            newIndicator = 0;
+            newIndicator = 0; 
             console.log(newIndicator);
           }
     
