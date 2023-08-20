@@ -9,7 +9,7 @@ let y = 0;
 let newIndicator = 1.1;
 let rotate = 0 ;
 let sideBarX = 1;
-let sideBarOpen = true;
+let sideBarOpen = false;
 let ChosenId = null;
 
 
