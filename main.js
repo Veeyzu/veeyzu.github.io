@@ -137,7 +137,7 @@ if (window.innerWidth < window.innerHeight) {
 document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
       isSwiping = false;
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -169,7 +169,7 @@ document.getElementById("CellContainer").addEventListener('pointerdown', (event)
     document.getElementById("CellContainer").addEventListener('pointermove', (event) => {
       isSwiping = true;
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + .5;
       console.log(pointer);
     });
 
