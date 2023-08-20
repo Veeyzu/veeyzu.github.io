@@ -69,7 +69,7 @@ if (window.innerWidth < window.innerHeight) {
 }
 //pointer eve nt work s better than touch event
 
-  if (isMobile && boola) {
+  if (isMobile) {
     document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
       firstTouch = true; 
       isSwiping = false;
