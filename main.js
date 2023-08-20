@@ -282,7 +282,7 @@ LoadGLTFByPath(scene)
     Chloro.add(scene.getObjectByName("Chloroplast"));
     Chloro.add(scene.getObjectByName("Chloroplast001"));
     Chloro.add(scene.getObjectByName("Chloroplast020"));
-    Chloro.name = "Chloroplast";
+    Chloro.name = "Chloroplasst";
     
     var Perox
     Perox = new THREE.Group();
