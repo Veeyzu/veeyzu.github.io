@@ -60,6 +60,14 @@ document.addEventListener("mousemove", function (event) {
    
 });
 
+function onMobileTouchStart(event){
+  event.preventDefault();
+  pointer.x = ( event.targetTouches[0].pageX / window.innerWidth) * 2 - 1;
+  pointer.y = -( event.targetTouches[0].pageY / window.innerHeight) * 2 + 1;
+}
+
+document.addEventListener('touchstart', onMobileTouchStart, false);
+
 document.addEventListener("click", function (event) { 
   //window.alert("urmom");
   raycaster.setFromCamera( pointer, camera );
