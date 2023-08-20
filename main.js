@@ -67,7 +67,7 @@ let isMobile = regexp.test(details);
 //pointer event works better than touch event
 
   if (isMobile) {
-    document.addEventListener('pointerdown', (event) => {
+    document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
       firstTouch = true; 
       isSwiping = false;
 
@@ -101,13 +101,13 @@ let isMobile = regexp.test(details);
       } 
 
     });
-    document.addEventListener('pointermove', (event) => {
+    document.getElementById("CellContainer").addEventListener('pointermove', (event) => {
       console.log("owo");
       if (firstTouch) {
         pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
         pointer.y = -(event.pageY / window.innerHeight) * 2 - .05;
         
-        
+
         firstTouch = false;
       } else {
         const diffX = Math.abs(event.pageX - pointer.X);
@@ -119,7 +119,7 @@ let isMobile = regexp.test(details);
       }
       isSwiping = true; 
     });
-    document.addEventListener('pointerup', (event) => {
+    document.getElementById("CellContainer").addEventListener('pointerup', (event) => {
       const diffX = Math.abs(event.pageX - pointer.X);
       const diffY = Math.abs(event.pageY - pointer.Y);
       if (diffX < delta && diffY < delta) {
@@ -131,7 +131,7 @@ let isMobile = regexp.test(details);
   } else {
     console.log("owowoowowow");
 //desktop behavior
-    document.addEventListener('pointerdown', (event) => {
+document.getElementById("CellContainer").addEventListener('pointerdown', (event) => {
       isSwiping = false;
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
       pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
@@ -163,14 +163,14 @@ let isMobile = regexp.test(details);
       } 
 
     });
-    document.addEventListener('pointermove', (event) => {
+    document.getElementById("CellContainer").addEventListener('pointermove', (event) => {
       isSwiping = true;
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
       pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
       console.log(pointer);
     });
 
-    document.addEventListener('pointerup', (event) => {
+    document.getElementById("CellContainer").addEventListener('pointerup', (event) => {
       const diffX = Math.abs(event.pageX - pointer.X);
       const diffY = Math.abs(event.pageY - pointer.Y);
 
