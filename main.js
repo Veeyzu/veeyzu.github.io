@@ -71,8 +71,8 @@ let isMobile = regexp.test(details);
       firstTouch = true; 
       isSwiping = false;
 
-      pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+      pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -104,8 +104,8 @@ let isMobile = regexp.test(details);
     document.addEventListener('pointermove', (event) => {
       console.log("owo");
       if (firstTouch) {
-        pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
-        pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
+        pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
         
         firstTouch = false;
       } else {
@@ -132,8 +132,8 @@ let isMobile = regexp.test(details);
 //desktop behavior
     document.addEventListener('pointerdown', (event) => {
       isSwiping = false;
-      pointer.x = (event.clientX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+      pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
 
       raycaster.setFromCamera( pointer, camera );
       const intersects = raycaster.intersectObjects( scene.children );
@@ -165,7 +165,7 @@ let isMobile = regexp.test(details);
     document.addEventListener('pointermove', (event) => {
       isSwiping = true;
       pointer.x = (event.pageX / window.innerWidth) * 2 - 1;
-      pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+      pointer.y = -(event.pageY / window.innerHeight) * 2 + 1;
       console.log(pointer);
     });
 
