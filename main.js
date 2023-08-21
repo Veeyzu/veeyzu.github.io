@@ -14,39 +14,154 @@ let ChosenId = null;
 let arrowRotate, xOffset, yOffset
 
 const lib = {
-  ["Reticulum Endoplasm"] : "Contain Hard RE and Soft RE",
-  ["Vacuole"] : "Big ass storage lmao",
-  ["Mitochondria"] : "produces those energy stuff that makes u do ur activity or smth idk",
-  ["Nucleus"] : "the brain that control the cell",
-  ["Golgi Complex"] : "uh funny blobby thingy",
-  ["Chloroplast"] : "it makes those good 02 zaza",
-  ["Glyoxysome / Peroxisome"] : `Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
-  Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.
+  ["Reticulum Endoplasm"] : `Fungsi RE Kasar :
+  (1) Membantu dalam sintesis protein 
+  
+  Fungsi RE Halus :
+  (1) Sintesis lemak
+  (2) Membantu metabolisme lemak
+  (3) Mendetoksifikasi racun
+  
+  Bagian :
+  a. Selapis membran yang berlekuk-lekuk 
+  b. Terletak di dekat/menempel dengan inti sel
+  c. Permukaan RE Kasar ditempeli oleh ribosom yang keluar dari inti sel
+  d. Permukaan RE Halus tidak ditempeli ribosom
+  `,
+  ["Vacuole"] : `Fungsi:
+  (1) Tempat penyimpanan cadangan makanan, seperti akar di ketela pohon (tepung) dan di batang tebu (gula).
+  (2) Menyimpan sisa metabolisme/pencernaan karena tidak dapat dikeluarkan oleh tumbuhan tersebut. 
+  (3) Mengatur konsentrasi air.
+  (4) Menyimpan minyak asiri, contohnya minyak kayu putih, peppermint, dan aroma harum pada bunga.
+  (5) Vakuola pada sel-sel mahkota bunga menyimpan pigmen warna, yakni warna merah, biru, kuning, dll. untuk menarik serangga yang dapat membantu penyerbukan. 
+  Vakuola kontraktil (mengempang/menipis)
+  (1) Mengatur tekanan osmotik atau konsentrasi air dan tempat pengeluaran cairan tubuh.
+  
+  Bagian:
+  Vakuola dibungkus tonoplas.
+  a. Tonoplas: Lapisan terluar atau membran luarnya vakuola.
+  b. Vakuola di sel tumbuhan berisi getah: Mengandung makanan dan juga zat buangan lain.
+  `,
+  ["Mitochondria"] : `Fungsi:
+  (1) Tempat respirasi seluler.
+  (2) Tempat penghasil energi (ATP).
+  (3) Molekul pembawa energi siap pakai.
+  
+  Bagian: 
+  a. Mitokondria memiliki dua lapisan membran (membran dalam dan membran luar).
+  Membran dalam: Pelekukan ke arah dalam yang membentuk krista.
+  Di membran dalam terdapat krista dan matriks.
+  b. Krista: Lapisan yang membuat permukaan membran dalam menjadi semakin luas sehingga proses respirasi sel semakin efektif. 
+  c. Matriks: Cairan gel dalam mitokondria yang tersusun dari air, protein, enzim respirasi, garam, DNA, dll. 
+  `,
+  ["Nucleus"] : `(1) Pusat informasi dan kendali seluruh aktivitas sel.
+  (2) Menyimpan informasi genetik dalam bentuk DNA.
+  (3) Mengontrol pertumbuhan dan pembelahan sel.
+  (4) Mengatur metabolisme sel dengan mensintesis berbagai enzim.
+  (5) Memproduksi RNA dari DNA yang lalu keluar dari pori-pori ke organel yang diinginkan (ribosom).
+  (6) Memproduksi ribosom.
+  
+  Bagian:
+  a. Selubung inti/membran nukleus dalam dan luar.
+  Luar: Berhubung langsung dengan RE dan akhirnya membran sel.
+  b. Nukleoplasma: Gel yang tersusun dari air, protein, ion, enzim, dan asam inti.
+  c. Kromatin: Benang penyerap warna di dalam nukleoplasma yang tersusun dari protein dan DNA.
+  d. Kromosom: Benang kromatin yang tampak memendek pada proses mitosis.
+  e. Nukleolus/anak inti: Organel tidak tetap yang terbentuk pada proses transkripsi untuk menghasilkan RNA. 
+
+  `,
+  ["Golgi Complex"] : `Fungsi:
+  1. Untuk memodifikasi, mengemas, dan menyortir molekul yang ada
+  2. Memproduksi selulosa yang menyusun dinding sel
+  
+  Bagian:
+  a. Cis, sebagai penerima vesikel yang berasal dari Retikulum Endoplasma
+  b. Sisterna, berfungsi sebagai modifikasi protein dari vesikel yang berasal dari RE menjadi vesikel bar
+  c. Trans, sebagai pengirim vesikel dari badan golgi menuju organel selanjutnya.
+  d. Vesikel transfer, untuk mentransfer protein dari badan golgi
+  e. Vesikel sekretaris, untuk melepas protein atau molekul lain
+  `,
+  ["Chloroplast"] : `Plastida hanya ada di sel tumbuhan yang memiliki banyak fungsi, seperti membantu proses fotosintesis, menghasilkan pigmen warna pada tumbuhan, dll.
+  Plastida terbagi menjadi bermacam-macam jenis ada kloroplas, kromoplas, leukoplas, dan amiloplas.
+  
+  Fungsi: 
+  (1) Kloroplas: Plastida mengandung klorofil yang berfungsi untuk membantu fotosintesis dengan cara memanfaatkan energi sinar matahari untuk membuat makanan.
+  (2) Kromoplas: Plastida pengandung berbagai pigmen warna yang bertugas untuk memberi warna pada bunga.
+  (3) Leukoplas: Plastida tidak berwarna yang berfungsi untuk menyimpan cadangan makanan. 
+  (4) Amiloplas: Plastida tidak berwarna yang berfungsi dalam penyimpanan amilum. 
+  
+  Bagian:
+  Kloroplas memiliki membran rangkap, yaitu membran luar dan dalam.
+  a. Membran luar: Permukaan rata yang berfungsi untuk mengatur keluar masuknya zat. 
+  b. Stroma: Membran dalam yang membungkus cairan kloroplas. 
+  c. Tilakoid: Membran dalam kloroplas yang melipat ke arah dalam dan membentuk lembaran-lembaran.
+  d. Grana: Tumpukan tilakoid yang membentuk badan seperti tumpukan uang logam.
+  `,
+  ["Micro Body"] : `Peroksisom ada di sel tumbuhan dan hewan.Sementara itu, glioksisom hanya ada di sel tumbuhan.
+
+  Peroksisom: 
+  Fungsi: 
+  (1) Menetralkan racun
+  (2) Menghasilkan enzim katalase yang berfungsi untuk menguraikan hidrogen peroksida (H2O2) yang bersifat beracun menjadi oksigen (O2) dan air (H2O) yang bersifat netral, lalu berperan juga dalam metabolisme lemak.
+  
+  Glioksisom:
+  Fungsi:
+  (1) Menghasilkan enzim katalase dan enzim oksidase yang berperan dalam proses metabolisme lemak (lemak menjadi gula/karbohidrat) yang juga menghasilkan energi. 
   
   `,
- 
-
+  ["Ribosomes"] : `Fungsi :
+  (1) Tempat berlangsungnya sintesis protein 
+  (2) Terdapat mRNA yang berfungsi sebagai cetakan resep untuk membuat protein tertentu
   
+  Bagian :
+  a. Subunit besar : berfungsi untuk memberikan bentuk ikatan peptida
+  b. Subunit kecil : berfungsi untuk membaca pesan mRNA untuk asam amino
+  c. mRNA : berfungsi sebagai cetakan resep membuat protein tertentu
+  `,
+  ["Sitoplasm"] : `Sitoplasma, merupakan bagian non nukleus dari protoplasma. Sitoplasma menjadi pengisi ruang kosong sel yang berfungsi sebagai tempat reaksi biokimia. Bagian ini terdapat sitoskeleton, sitosol, dan veskuli berupa cairan.
+  `,
+  ["Cytoskeleton"] : `
+  Fungsi :
+(1) Memberi bentuk pada sel 
+(2) Mengatur pergerakan yang ada di dalam sel 
+(3) Mempertahankan organel-organel sel tetap berada ditempatnya masing-masing
+(4) Mikrofilamen : di dalam mikrofilamen ada protein aktin, yang nantinya akan berikatan dengan miosin, sehingga terjadi kontraksi otot untuk pergerakan
+(5) Filamen Intermediate : mempertahankan bentuk sel
+(6) Mikrotubulus : menggerakan organel, pembentukan sila dan flagel
+
+Bagian : 
+a. Mikrofilamen : lapisan paling tipis dan letaknya di pinggir sel
+b. Filamen Intermediate : lapisan yang ketebalannya sedang
+c. Mikrotubulus : lapisan yang paling tebal dan tersusun dari protein tubulus
+  `,
+  ["Membrane Cell & Cell Wall"] : `--MEMBRAN SEL--
+  [Bagian dalam]
+  Fungsi : 
+(1) Memisahkan bagian dalam sel dari lingkungan luar serta berperan sebagai pelindung sel
+(2) Pengatur zat-zat yang masuk dan keluar sel, hanya zat tertentu yang dapat melewati membran plasma
+
+Bagian :
+a. Glikolipid : glikogen yang menempel pada fosfolipid, membantu menstabilkan membran
+b. Glikoprotein : glikogen yang menempel pada protein, berfungsi sebagai reseptor hormon dan neurotransmitter
+c. Fosfolipid : terbagi menjadi dua yaitu fosfat (hidrofilik) dan lipid (hidrofobik). Karena ada dua lapisan fosfolipid, maka disebut juga fosfolipid bilayer
+d. Protein Integral : protein yang dapat menembus kedua lapisan membran sel
+e. Protein Perifer : hanya menempel pada bagian atas/bawah sel
+f. Protein Saluran : punya pori yang menjadi saluran ion pelarut air
+
+  --DINDING SEL--
+  [Bagian Luar]
+
+  Fungsi:
+1. Sebagai pelindung sel
+2. Memperkuat bentuk sel
+3. Menentukan ciri sel (hanya terdapat pada sel tumbuhan)
+
+Bagian:
+a. Lamela tengah, lapisan terluar dinding sel yang banyak mengandung pektin (perekat, pembentuk tekstur, dan sebagai membran sel)
+b. Dinding sel primer, diantara lamela tengah dan dinding sel sekunder yang terdapat hemiselulosa (mengikat lembaran serat selulosa membentuk mikrofibril yang meningkatkan stabilitas dinding sel.), selulosa (penyusun utama dinding sel tumbuhan), lipid, dan protein. Bersifat fleksibel dan berfungsi membuat sel dapat melebar ketika mengalami pertumbuhan.
+c. Dinding sel sekunder, merupakan lapisan terakhir yang mengandung banyak lignin sehingga menjadi yang paling kokoh dan kaku serta paling tebal karena terjadi pula penebalan sel.
+
+  `,
 };
 
 const raycaster = new THREE.Raycaster();
@@ -84,9 +199,9 @@ if (window.innerWidth < window.innerHeight) {
         if (intersects[0].object.parent.isGroup) {
           
           for (let i = 0; i < intersects[0].object.parent.children.length; i++){
-            const color = new THREE.Color("rgb(178, 72, 255)");
+            let color = new THREE.Color("rgb(178, 72, 255)");
             console.log(intersects[0].object.parent.children[i]);
-    
+            
             intersects[0].object.parent.children[i].material.emissive = color
             rotate = Math.floor(Math.random() * 10)-5;
             document.getElementById("ObjectName").innerText = intersects[0].object.parent.name
@@ -146,9 +261,9 @@ document.getElementById("CellContainer").addEventListener('pointerdown', (event)
         if (intersects[0].object.parent.isGroup) {
           
           for (let i = 0; i < intersects[0].object.parent.children.length; i++){
-            const color = new THREE.Color("rgb(178, 72, 255)");
+            let color = new THREE.Color("rgb(178, 72, 255)");
             console.log(intersects[0].object.parent.children[i]);
-    
+           
             intersects[0].object.parent.children[i].material.emissive = color
             rotate = Math.floor(Math.random() * 10)-5;
             document.getElementById("ObjectName").innerText = intersects[0].object.parent.name
@@ -241,7 +356,7 @@ document.getElementById("MaterialHandler").innerText = `
   - owo
   - owo
 `
-document.getElementById("Description").innerText = "owoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowoowo "
+document.getElementById("Description").innerText = "Click on an organel"
 // Load the GLTF model
 LoadGLTFByPath(scene)
 
@@ -251,17 +366,17 @@ LoadGLTFByPath(scene)
 
     var Nucleus
     Nucleus = new THREE.Group();
-    scene.getObjectByName("Plane001_1").position.y = 5.15;
-    scene.getObjectByName("Plane001").position.y = 5.15;
-    Nucleus.add(scene.getObjectByName("Plane001_1"));
-    Nucleus.add(scene.getObjectByName("Plane001"));
+    scene.getObjectByName("Nukleus").position.y = 5.15;
+    scene.getObjectByName("Nukleus001").position.y = 5.15;
+    Nucleus.add(scene.getObjectByName("Nukleus"));
+    Nucleus.add(scene.getObjectByName("Nukleus001"));
     Nucleus.name = "Nucleus"
 
     var Vacuole
     Vacuole = new THREE.Group();
-    scene.getObjectByName("Plane004").position.y = 5.15;
+    scene.getObjectByName("Plane004_2").position.y = 5.15;
     scene.getObjectByName("Plane004_1").position.y = 5.15;
-    Vacuole.add(scene.getObjectByName("Plane004"));
+    Vacuole.add(scene.getObjectByName("Plane004_2"));
     Vacuole.add(scene.getObjectByName("Plane004_1"));
     Vacuole.add(scene.getObjectByName("Vacuole001"));
     Vacuole.name = "Vacuole";
@@ -269,6 +384,7 @@ LoadGLTFByPath(scene)
     var RE
     RE = new THREE.Group();
     RE.add(scene.getObjectByName("RE"));
+    RE.add(scene.getObjectByName("Icosphere"));
     RE.name = "Reticulum Endoplasm";
 
     var Mitochondria
@@ -288,14 +404,36 @@ LoadGLTFByPath(scene)
     Chloro.add(scene.getObjectByName("Chloroplast"));
     Chloro.add(scene.getObjectByName("Chloroplast001"));
     Chloro.add(scene.getObjectByName("Chloroplast020"));
-    Chloro.name = "Chloroplasst";
+    Chloro.name = "Chloroplast";
     
     var Perox
     Perox = new THREE.Group();
     Perox.add(scene.getObjectByName("Glioksisom"));
     Perox.add(scene.getObjectByName("Glioksisom001"));
-    Perox.name = "Glyoxysome / Peroxisome";
+    Perox.name = "Micro Body";
     
+    var Skel
+    Skel = new THREE.Group();
+    Skel.add(scene.getObjectByName("Plane001"));
+    Skel.add(scene.getObjectByName("Plane004"));
+    Skel.name = "Cytoskeleton";
+
+    var Ribosome
+    Ribosome = new THREE.Group();
+    Ribosome.add(scene.getObjectByName("Circle"));
+    Ribosome.add(scene.getObjectByName("Circle001"));
+    Ribosome.name = "Ribosomes";
+
+    var WallMem
+    WallMem = new THREE.Group();
+    WallMem.add(scene.getObjectByName("CellWall001"));
+    WallMem.add(scene.getObjectByName("Membrane"));
+    WallMem.name = "Membrane Cell & Cell Wall";
+
+    var SPlasm
+    SPlasm = new THREE.Group();
+    SPlasm.add(scene.getObjectByName("Plane002"));
+    SPlasm.name = "Sitoplasm";
     //scene.traverse(function (object) {
     //  console.log(object);
     
@@ -307,6 +445,10 @@ LoadGLTFByPath(scene)
     scene.add(GolgiComplex);
     scene.add(Chloro);
     scene.add(Perox);
+    scene.add(Skel);
+    scene.add(Ribosome);
+    scene.add(WallMem);
+    scene.add(SPlasm);
   })
   .catch((error) => {
     console.error('Error loading JSON scene:', error);
