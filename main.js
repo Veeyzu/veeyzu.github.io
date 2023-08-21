@@ -347,14 +347,37 @@ if (isMobile) {
 }
 
 document.getElementById("MaketMaker").innerText = `
-  Maket Maker:
-  - People
-  - People
+Maket Maker:
+1. Althayra M/01
+2. Alyssa DD/02
+3. Aulia H/04
+4. Chelvincia AS/05
+5. Clarissa HA/06
+6. Daffa FR/07
+7. Fathia RK/08
+8. Georgetta ST/09
+9. Haidar FM/10
+10. Kazio RBI/11
+11. Kennis SS/13
+12. Khalisa RW/15
+13. Mazaya DAN/16
+14. M Aghna F/18
+15. M Kaisar R/19
+16. Najla HZK/21
+17. Puti D/22
+18. Raihan FR/23
+19. Rama D/24
+20. Rizky A/25
+21. Ryuchi NKR/26
+22. Syareva RS/27
+23. Wira FA/29
+24. Zaina TY/30
 `
 document.getElementById("MaterialHandler").innerText = `
   Who Handle Materials:
-  - owo
-  - owo
+  1. Keisya / 12
+  2. Tasya / 28
+  3. M.Trevano /20
 `
 document.getElementById("Description").innerText = "Click on an organel"
 // Load the GLTF model
